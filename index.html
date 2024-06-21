@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechnoLife</title>
+    <link rel="icon" href="./pictures/fav icon.png">
+    <link rel="stylesheet" href="./css/app.css">
+    <script src="./js/swiper.js"></script>
+    <script src="./js/app.js" type="module" defer></script>
+</head>
+<body> 
+    <site-header></site-header>
+    <main class="main">
+      <div class="slider" >
+        <ul class="slider-items">
+          <li class="slider-item">
+            <img class="slider-item__img slider-item__img--lg" src="./pictures/banner_SlideBanner_1.webp" alt="">
+            <img class="slider-item__img slider-item__img--sm" src="./pictures/banner_SlideBannerMobile_1.webp" alt="">
+          </li>
+          <li class="slider-item">
+            <img class="slider-item__img slider-item__img--lg" src="./pictures/banner_SlideBanner_2.webp" alt="">
+            <img class="slider-item__img slider-item__img--sm" src="./pictures/banner_SlideBannerMobile_2.webp" alt="">
+
+          </li>
+          <li class="slider-item">
+            <img class="slider-item__img slider-item__img--lg" src="./pictures/banner_SlideBanner_.webp" alt="">
+            <img class="slider-item__img slider-item__img--sm" src="./pictures/banner_SlideBannerMobile_3.webp" alt="">
+
+          </li>
+        </ul>
+        <!-- Next and previous buttons -->
+        <div class="slider__btns">
+          <button class="slider-next__btn" onclick="plusSlide()"> 
+            <svg class="slider-next__icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>          
+          </button>
+          <button class="slider-prev__btn" onclick="minusSlide()">
+            <svg class="slider-prev__icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>   
+          </button>  
+        </div>
+        <!-- The dots/circles for slide navigation -->
+        <div class="slider__dots">
+            <span class="slider__dot"></span>
+            <span class="slider__dot"></span>
+            <span class="slider__dot"></span>
+            <!-- Add more dots for additional slides -->
+            <!-- ... -->
+        </div>
+      </div>
+      <div class="stories">
+        <div class="container">
+          <div class="swiper-container stories-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide story">
+                <a href="#" class="story__banner">
+                  <img class="story__img" src="./pictures/banner_CircleCategories_2.webp" alt="">
+                </a>
+                <a href="#" class="story__caption"> ماشین های اداری </a>
+              </div>
+              <div class="swiper-slide story">
+                <a href="#" class="story__banner">
+                  <img class="story__img" src="./pictures/banner_CircleCategories_3.webp" alt="">
+                </a>
+                <a href="#" class="story__caption"> تبلت </a>
+              </div>
+              <div class="swiper-slide story">
+                <a href="#" class="story__banner">
+                  <img class="story__img" src="./pictures/banner_CircleCategories_4.webp" alt="">
+                </a>
+                <a href="#" class="story__caption"> هدفون و هندزفری </a>
+              </div>
+              <div class="swiper-slide story">
+                <a href="#" class="story__banner">
+                  <img class="story__img" src="./pictures/banner_CircleCategories_5.webp" alt="">
+                </a>
+                <a href="#" class="story__caption"> لوازم خانگی </a>
+              </div>
+              <div class="swiper-slide story">
+                <a href="#" class="story__banner">
+                  <img class="story__img" src="./pictures/banner_CircleCategories_6.webp" alt="">
+                </a>
+                <a href="#" class="story__caption"> اسپیکر </a>
+              </div>
+              <div class="swiper-slide story">
+                <a href="#" class="story__banner">
+                  <img class="story__img" src="./pictures/banner_CircleCategories_7.webp" alt="">
+                </a>
+                <a href="#" class="story__caption"> ساعت هوشمند </a>
+              </div>
+              <div class="swiper-slide story">
+                <a href="#" class="story__banner">
+                  <img class="story__img" src="./pictures/banner_CircleCategories_8.webp" alt="">
+                </a>
+                <a href="#" class="story__caption"> لپتاپ </a>
+              </div>
+              <div class="swiper-slide story">
+                <a href="#" class="story__banner">
+                  <img class="story__img" src="./pictures/banner_CircleCategories_1.webp" alt="">
+                </a>
+                <a href="#" class="story__caption"> گیمینگ </a>
+              </div>
+              <div class="swiper-slide story">
+                <a href="#" class="story__banner">
+                  <img class="story__img" src="./pictures/banner_CircleCategories_9.webp" alt="">
+                </a>
+                <a href="#" class="story__caption"> قطعات گوشی </a>
+              </div>
+              <div class="swiper-slide story">
+                <a href="#" class="story__banner">
+                  <img class="story__img" src="./pictures/banner_CircleCategories_10.webp" alt="">
+                </a>
+                <a href="#" class="story__caption"> لوازم جانبی </a>
+              </div>
+              <div class="swiper-slide story">
+                <a href="#" class="story__banner">
+                  <img class="story__img" src="./pictures/banner_CircleCategories_11.webp" alt="">
+                </a>
+                <a href="#" class="story__caption"> پاوربانک </a>
+              </div>
+            </div>
+            <button class="swiper-button-next">
+              <svg width="1rem" height="1rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#212121">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+              </svg> 
+            </button>
+            <button class="swiper-button-prev">
+              <svg width="1rem" height="1rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#212121">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="sale">
+        <div class="container">
+          <div class="sale__wrapper">
+            <div class="sale__head">
+              <img class="sale__head-img" src="./pictures/static_technoffHeaderMobile.svg" alt="">
+              <a class="sale__link" href="#"> 
+                <span> نمایش همه </span>
+                <svg width=".6rem" height=".6rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#fff">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg>
+              </a>
+            </div>
+            <div class="sale__body">
+              <div class="swiper-container products-container">
+                <div class="swiper-wrapper sale-products">
+                  
+                </div>
+                <button class="swiper-button-next">
+                  <svg width="1rem" height="1rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#212121">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg> 
+                </button>
+                <button class="swiper-button-prev">
+                    <svg width="1rem" height="1rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#212121">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 col-md-12">
+              <a class="banner__link" href="#">
+                <img class="banner__img" src="./pictures/banner_CenterTripletBannersMobile_1.webp" alt="">
+              </a>
+            </div>
+            <div class="col-4 col-md-12">
+              <a class="banner__link" href="#">
+                <img class="banner__img" src="./pictures/banner_CenterTripletBannersMobile_2.webp" alt="">
+              </a>
+            </div>
+            <div class="col-4 col-md-12">
+              <a class="banner__link" href="#">
+                <img class="banner__img" src="./pictures/banner_CenterTripletBannersMobile_3.webp" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Flagships">
+        <div class="container">
+          <div class="section__wrapper">
+            <div class="section__head">
+              <h3 class="section__title">
+                پرچمداران هوشمند
+              </h3>
+              <a href="#" class="section__link">
+                مشاهده همه
+                <svg width=".6rem" height=".6rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#204cc7">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg> 
+              </a>
+            </div>
+            <div class="section__body">
+              <div class="swiper-container products-container">
+                <div class="swiper-wrapper Flagships-products">
+                  
+                </div>
+                <button class="swiper-button-next">
+                  <svg width="1rem" height="1rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#212121">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg> 
+                </button>
+                <button class="swiper-button-prev">
+                    <svg width="1rem" height="1rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#212121">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-categories">
+        <div class="container">
+          <div class="categories__wrapper">
+            <div class="categories__head">
+              <h3 class="section__title">
+                برترین های موبایل
+              </h3>
+            </div>
+            <div class="categories__body">
+              <a class="category" href="#">
+                <img class="category__img" src="./pictures/static_phone_samsung.webp" alt="">
+                <p class="category__name"> سامسونگ </p>
+              </a>
+              <a class="category" href="#" >
+                <img class="category__img" src="./pictures/static_phone_poco.webp" alt="">
+                <p class="category__name"> پوکو </p>
+              </a>
+              <a class="category" href="#">
+                <img class="category__img" src="./pictures/static_phone_iphone.webp" alt="">
+                <p class="category__name"> آیفون </p>
+              </a>
+              <a class="category" href="#">
+                <img class="category__img" src="./pictures/static_phone_honor.webp" alt="">
+                <p class="category__name"> آنر </p>
+              </a>
+              <a class="category" href="#">
+                <img class="category__img" src="./pictures/static_phone_xiaomi.webp" alt="">
+                <p class="category__name"> شیائومی </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-section">
+        <div class="container">
+          <a class="banner__link" href="#">
+            <img class="banner__img" src="./pictures/banner_SingleFullWidthBanner.webp" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="laptops">
+        <div class="container">
+          <div class="section__wrapper">
+            <div class="section__head">
+              <h3 class="section__title">
+                لپتاپ ها در تکنولایف
+              </h3>
+              <a href="#" class="section__link">
+                مشاهده همه
+                <svg width=".6rem" height=".6rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#204cc7">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg> 
+              </a>
+            </div>
+            <div class="section__body">
+              <div class="swiper-container products-container">
+                <div class="swiper-wrapper laptops-products">
+                  
+                </div>
+                <button class="swiper-button-next">
+                  <svg width="1rem" height="1rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#212121">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg> 
+                </button>
+                <button class="swiper-button-prev">
+                    <svg width="1rem" height="1rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#212121">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="laptop-categories">
+        <div class="container">
+          <div class="categories__wrapper">
+            <div class="categories__head">
+              <h3 class="section__title">
+                برترین های لپتاپ
+              </h3>
+            </div>
+            <div class="categories__body">
+              <a class="category" href="#">
+                <img class="category__img" src="./pictures/static_laptop_asus.webp" alt="">
+                <p class="category__name"> ایسوس </p>
+              </a>
+              <a class="category" href="#">
+                <img class="category__img" src="./pictures/static_laptop_hp.webp" alt="">
+                <p class="category__name"> اچ پی </p>
+              </a>
+              <a class="category" href="#">
+                <img class="category__img" src="./pictures/static_laptop_mac.webp" alt="">
+                <p class="category__name"> مک بوک </p>
+              </a>
+              <a class="category" href="#">
+                <img class="category__img" src="./pictures/static_laptop_lenovo.webp" alt="">
+                <p class="category__name"> لنوو </p>
+              </a>
+              <a class="category" href="#">
+                <img class="category__img" src="./pictures/static_laptop_aser.webp" alt="">
+                <p class="category__name"> ایسر </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-12">
+              <a class="banner__link" href="#">
+                <img class="banner__img" src="./pictures/banner_FirstTwinBanners_.webp" alt="">
+              </a>
+            </div>
+            <div class="col-6 col-md-12">
+              <a class="banner__link" href="#">
+                <img class="banner__img" src="./pictures/banner_FirstTwinBanners_2.webp" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-lg-12">
+              <div class="filter-col">
+                <div class="filter-col__head">
+                  <h3 class="section__title">
+                    گوشی براساس قیمت
+                  </h3>
+                </div>
+                <div class="filter-col__body">
+                  <a class="filter" style="background-color:#F7FAFF">
+                    <p class="filter__title">
+                      گوشی ساده و ارزان
+                    </p>
+                  </a>
+                  <a class="filter" style="background-color:#F2F7FF">
+                    <p class="filter__title">
+                      گوشی تا <span> 15 </span> میلیون
+                    </p>
+                  </a>
+                  <a class="filter" style="background-color:#E9F1FF">
+                    <p class="filter__title">
+                      گوشی تا <span> 50 </span> میلیون
+                    </p>
+                  </a>
+                  <a class="filter" style="background-color:#F7FAFF">
+                    <p class="filter__title">
+                      گوشی تا <span> 5 </span> میلیون
+                    </p>
+                  </a>
+                  <a class="filter" style="background-color:#F2F7FF">
+                    <p class="filter__title">
+                      گوشی تا <span> 50 </span> میلیون
+                    </p>
+                  </a>
+                  <a class="filter" style="background-color:#E9F1FF">
+                    <p class="filter__title">
+                      گوشی تا <span> 75 </span> میلیون
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-12">
+              <div class="filter-col">
+                <div class="filter-col__head">
+                  <h3 class="section__title">
+                    گوشی براساس ویژگی
+                  </h3>
+                </div>
+                <div class="filter-col__body">
+                  <a class="filter" style="background-color:#FFF5F6;border-color:#F1737F;">
+                    <p class="filter__title">
+                      گیمینگ
+                    </p>
+                  </a>
+                  <a class="filter" style="background-color:#F9F9F6;border-color:#BBB398;">
+                    <p class="filter__title">
+                      دوربین
+                    </p>
+                  </a>
+                  <a class="filter" style="background-color:#FFF5EC;border-color:#E0A161;">
+                    <p class="filter__title">
+                      5G
+                    </p>
+                  </a>
+                  <a class="filter" style="background-color:#EAFAFF;border-color:#47C3E4;">
+                    <p class="filter__title">
+                      باتری
+                    </p>
+                  </a>
+                  <a class="filter" style="background-color:#F2F5FE;border-color:#8298E1;">
+                    <p class="filter__title">
+                      ضدآب
+                    </p>
+                  </a>
+                  <a class="filter" style="background-color:#F9FBEA;border-color:#B5C168;">
+                    <p class="filter__title">
+                      شارژ سریع
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="free-space">
+        <div class="container">
+          <div class="free-space__wrapper"></div>
+        </div>
+      </div>
+      <div class="handsfree-categories">
+        <div class="container">
+          <div class="categories__wrapper">
+            <div class="categories__head">
+              <h3 class="section__title">
+                برترین های هندزفری
+              </h3>
+            </div>
+            <div class="categories__body">
+              <a class="category" href="#">
+                <img class="category__img" src="./pictures/static_handsfree_qc.webp" alt="">
+                <p class="category__name"> کیوسی وای  </p>
+              </a>
+              <a class="category" href="#">
+                <img class="category__img" src="./pictures/static_handsfree_haylou.webp" alt="">
+                <p class="category__name"> هایلو </p>
+              </a>
+              <a class="category" href="#">
+                <img class="category__img" src="./pictures/static_handsfree_xiaomi.webp" alt="">
+                <p class="category__name"> شیائومی </p>
+              </a>
+              <a class="category" href="#">
+                <img class="category__img" src="./pictures/static_handsfree_apple.webp" alt="">
+                <p class="category__name"> اپل </p>
+              </a>
+              <a class="category" href="#">
+                <img class="category__img" src="./pictures/static_handsfree_samsung.webp" alt="">
+                <p class="category__name"> سامسونگ </p>
+              </a>
+              <a class="category" href="#">
+                <img class="category__img" src="./pictures/static_handsfree_huawei.webp" alt="">
+                <p class="category__name"> هواوی </p>
+              </a>
+              <a class="category" href="#">
+                <img class="category__img" src="./pictures/static_handsfree_anker.webp" alt="">
+                <p class="category__name"> انکر </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-12">
+              <a class="banner__link" href="#">
+                <img class="banner__img" src="./pictures/banner_SecondTwinBanners_22.webp" alt="">
+              </a>
+            </div>
+            <div class="col-6 col-md-12">
+              <a class="banner__link" href="#">
+                <img class="banner__img" src="./pictures/banner_SecondTwinBanners_21.webp" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="brands">
+        <div class="container">
+          <div class="brands__wrapper">
+            <div class="brands-right">
+              <svg class="brands-right__icon" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" style="enable-background:new 0 0 100 100;" xml:space="preserve" fill="#fff">
+                <path d="M38.6,43.2c-1.6-1.6-4.1-1.6-5.7,0c-1.5,1.5-1.6,3.9-0.2,5.5l12.1,13.1c0.7,0.8,1.8,1.2,2.9,1.2h0.1c1.1,0,2.1-0.4,2.8-1.2  l30.5-30.5c1.6-1.6,1.6-4.1,0-5.7s-4.1-1.6-5.7,0L47.9,53.3L38.6,43.2z"/>
+                <path d="M50,83.4c18.5,0,33.4-15,33.4-33.4c0-2.2-1.8-4-4-4s-4,1.8-4,4C75.4,64,64,75.4,50,75.4S24.6,64,24.6,50S36,24.6,50,24.6  l0,0c2.2,0,4-1.8,4-4s-1.8-4-4-4c-18.5,0-33.4,15-33.4,33.4C16.6,68.5,31.5,83.4,50,83.4z"/>
+              </svg>
+              <h3 class="brands__title"> برندهای منتخب </h3>
+            </div>
+            <div class="brands-left">
+              <div class="brand-items">
+                <div class="brand-item">
+                  <div class="brand-item__wrapper">
+                    <div class="brand">
+                      <a class="brand__link" href="#">
+                        <img class="brand__img" src="./pictures/banner_BrandBanners_1.webp" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="brand-item">
+                  <div class="brand-item__wrapper">
+                    <div class="brand">
+                      <a class="brand__link" href="#">
+                        <img class="brand__img" src="./pictures/banner_BrandBanners_2.webp" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="brand-item">
+                  <div class="brand-item__wrapper">
+                    <div class="brand">
+                      <a class="brand__link" href="#">
+                        <img class="brand__img" src="./pictures/banner_BrandBanners_3.webp" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="brand-item">
+                  <div class="brand-item__wrapper">
+                    <div class="brand">
+                      <a class="brand__link" href="#">
+                        <img class="brand__img" src="./pictures/banner_BrandBanners_4.webp" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="brand-item">
+                  <div class="brand-item__wrapper">
+                    <div class="brand">
+                      <a class="brand__link" href="#">
+                        <img class="brand__img" src="./pictures/banner_BrandBanners_5.webp" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="brand-item">
+                  <div class="brand-item__wrapper">
+                    <div class="brand">
+                      <a class="brand__link" href="#">
+                        <img class="brand__img" src="./pictures/banner_BrandBanners_6.webp" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <button class="next-btn">
+                  <svg width="1rem" height="1rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#212121">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg> 
+                </button>
+                <button class="prev-btn">
+                  <svg width="1rem" height="1rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#212121">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="furnitures">
+        <div class="container">
+          <div class="section__wrapper furnitures__wrapper">
+            <div class="section__head">
+              <h3 class="section__title">
+                لوازم خانگی تکنولایف
+              </h3>
+              <a href="#" class="section__link">
+                مشاهده همه
+                <svg width=".6rem" height=".6rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#204cc7">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg> 
+              </a>
+            </div>
+            <div class="section__body">
+              <div class="swiper-container products-container">
+                <div class="swiper-wrapper furnitures-products">
+                  
+                </div>
+                <button class="swiper-button-next">
+                  <svg width="1rem" height="1rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#212121">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg> 
+                </button>
+                <button class="swiper-button-prev">
+                    <svg width="1rem" height="1rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#212121">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="furniture-categories">
+        <div class="container">
+          <div class="furniture-categories__wrapper">
+            <div class="furniture-categories__head">
+              <h3 class="section__title furniture-categories__title">
+                لوازم خانگی <span> خانه و آشپزخانه </span>
+              </h3>
+            </div>
+            <div class="furniture-categories__body">
+              <div class="furniture-category">
+                <a class="furniture-category__link" href="#">
+                  <img class="furniture-category__img" src="./pictures/static_homeAppliance_electric_heater.webp" alt="">
+                  <h5 class="furniture-category__title"> بخاری برقی </h5>
+                </a>
+              </div>
+              <div class="furniture-category">
+                <a class="furniture-category__link" href="#">
+                  <img class="furniture-category__img" src="./pictures/static_homeAppliance_vaccum.webp" alt="">
+                  <h5 class="furniture-category__title"> جارو برقی </h5>
+                </a>
+              </div>
+              <div class="furniture-category">
+                <a class="furniture-category__link" href="#">
+                  <img class="furniture-category__img" src="./pictures/static_homeAppliance_juicer.webp" alt="">
+                  <h5 class="furniture-category__title">  آبمیوه گیری </h5>
+                </a>
+              </div>
+              <div class="furniture-category">
+                <a class="furniture-category__link" href="#">
+                  <img class="furniture-category__img" src="./pictures/static_homeAppliance_airConditioner.webp" alt="">
+                  <h5 class="furniture-category__title"> کولر گازی </h5>
+                </a>
+              </div>
+              <div class="furniture-category">
+                <a class="furniture-category__link" href="#">
+                  <img class="furniture-category__img" src="./pictures/static_homeAppliance_teaMaker.webp" alt="">
+                  <h5 class="furniture-category__title"> چای ساز </h5>
+                </a>
+              </div>
+              <div class="furniture-category">
+                <a class="furniture-category__link" href="#">
+                  <img class="furniture-category__img" src="./pictures/static_homeAppliance_iron.webp" alt="">
+                  <h5 class="furniture-category__title"> اتو  </h5>
+                </a>
+              </div>
+              <div class="furniture-category">
+                <a class="furniture-category__link" href="#">
+                  <img class="furniture-category__img" src="./pictures/static_homeAppliance_riceMaker.webp" alt="">
+                  <h5 class="furniture-category__title"> پلوپز  </h5>
+                </a>
+              </div>
+              <div class="furniture-category">
+                <a class="furniture-category__link" href="#">
+                  <img class="furniture-category__img" src="./pictures/static_homeAppliance_microwave.webp" alt="">
+                  <h5 class="furniture-category__title"> مایکروویو  </h5>
+                </a>
+              </div>
+              <div class="furniture-category">
+                <a class="furniture-category__link" href="#">
+                  <img class="furniture-category__img" src="./pictures/static_homeAppliance_refrigerator.webp" alt="">
+                  <h5 class="furniture-category__title"> یخچال  </h5>
+                </a>
+              </div>
+              <div class="furniture-category">
+                <a class="furniture-category__link" href="#">
+                  <img class="furniture-category__img" src="./pictures/static_homeAppliance_coffeMaker.webp" alt="">
+                  <h5 class="furniture-category__title"> قهوه ساز  </h5>
+                </a>
+              </div>
+              <div class="furniture-category">
+                <a class="furniture-category__link" href="#">
+                  <img class="furniture-category__img" src="./pictures/static_homeAppliance_meatGreander.webp" alt="">
+                  <h5 class="furniture-category__title"> چرخ گوشت </h5>
+                </a>
+              </div>
+              <div class="furniture-category">
+                <a class="furniture-category__link" href="#">
+                  <img class="furniture-category__img" src="./pictures/static_homeAppliance_dishwasher.webp" alt="">
+                  <h5 class="furniture-category__title">  ماشین ظرفشویی  </h5>
+                </a>
+              </div>
+              <div class="furniture-category">
+                <a class="furniture-category__link" href="#">
+                  <img class="furniture-category__img" src="./pictures/static_homeAppliance_hairDryer.webp" alt="">
+                  <h5 class="furniture-category__title">  سشوار </h5>
+                </a>
+              </div>
+              <div class="furniture-category">
+                <a class="furniture-category__link" href="#">
+                  <img class="furniture-category__img" src="./pictures/static_homeAppliance_washingMachine.webp" alt="">
+                  <h5 class="furniture-category__title">  ماشین لباس شویی  </h5>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-12">
+              <a class="banner__link" href="#">
+                <img class="banner__img" src="./pictures/banner_ThirdTwinBanners_31.webp" alt="">
+              </a>
+            </div>
+            <div class="col-6 col-md-12">
+              <a class="banner__link" href="#">
+                <img class="banner__img" src="./pictures/banner_ThirdTwinBanners_32.webp" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accessories">
+        <div class="container">
+          <div class="section__wrapper">
+            <div class="section__head">
+              <h3 class="section__title">
+                لوازم جانبی منتخب
+              </h3>
+              <a href="#" class="section__link">
+                مشاهده همه
+                <svg width=".6rem" height=".6rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#204cc7">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg> 
+              </a>
+            </div>
+            <div class="section__body">
+              <div class="swiper-container products-container">
+                <div class="swiper-wrapper accessories-products">
+                  
+                </div>
+                <button class="swiper-button-next">
+                  <svg width="1rem" height="1rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#212121">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg> 
+                </button>
+                <button class="swiper-button-prev">
+                    <svg width="1rem" height="1rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#212121">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+              </div>
+            </div>   
+          </div>
+        </div>
+      </div>
+      <div class="tablets">
+        <div class="container">
+          <div class="section__wrapper section__wrapper--tables">
+            <div class="section__head">
+              <h3 class="section__title">
+                لوازم جانبی منتخب
+              </h3>
+              <a href="#" class="section__link">
+                مشاهده همه
+                <svg width=".6rem" height=".6rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#204cc7">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg> 
+              </a>
+            </div>
+            <div class="section__body">
+              <div class="swiper-container products-container">
+                <div class="swiper-wrapper tablets-products">
+                  
+                </div>
+                <button class="swiper-button-next">
+                  <svg width="1rem" height="1rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#212121">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg> 
+                </button>
+                <button class="swiper-button-prev">
+                    <svg width="1rem" height="1rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#212121">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div class="blogs">
+        <div class="container">
+          <div class="section__wrapper blogs__wrapper">
+            <div class="section__head">
+              <h3 class="section__title">
+                از وبلاگ تکنولایف
+              </h3>
+              <a href="#" class="section__link">
+                نمایش بیشتر در بلاگ
+                <svg width=".6rem" height=".6rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#204cc7">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg> 
+              </a>
+            </div>
+              <div class="section__body blogs__body">
+                <div class="swiper-container blogs-container">
+                  <div class="swiper-wrapper blogs-wrapper">
+
+                  </div>
+                  <button class="swiper-button-next">
+                    <svg width="1rem" height="1rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#212121">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg> 
+                  </button>
+                  <button class="swiper-button-prev">
+                      <svg width="1rem" height="1rem"  fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="#212121">
+                       <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                      </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="free-space">
+        <div class="container">
+          <div class="free-space__wrapper"></div>
+        </div>
+      </div>
+      <div class="descriptions">
+        <div class="container">
+          <div class="descriptions__wrapper">
+            <div class="descriptions__content">
+              <h2 class="descriptions__title">
+                خرید گوشی
+              </h2>
+              <p class="descriptions__text">
+                خرید گوشی و خرید اینترنتی گوشی از کارهای سخت و پرچالشی است که زمان زیادی از خریدار موبایل می‌گیرد. برای خرید گوشی و خرید اینترنتی موبایل باید به نکات مهمی توجه کرد که چندتا از آن‌ها خیلی مهم هستند: اصالت فروشگاه موبایل،
+              </p>
+              <h2 class="descriptions__title">
+                فروشگاه اینترنتی موبایل 
+              </h2>
+              <p class="descriptions__text">
+                برای خرید گوشی موبایل از سایت خرید گوشی باید به چه نکاتی توجه کرد؟ فروشگاه‌های اینترنتی موبایل زیادی هستند که انواع و اقسام گوشی‌های موبایل را می‌فروشند اما همه‌ی آن‌ها قابل اعتماد نیستند، مثلا خیلی از سایت‌های خرید گوشی با شعار خرید اینترنتی گوشی ارزان، مشتری جذب می‌کند. بنابراین همانطور که خرید موبایل به صورت حضوری کار سختی است، خرید اینترنتی موبایل هم پر از چالش است. توجه به نشانه نماد الکترونیکی در صفحه سایت خرید گوشی، خواندن نظرات خریداران موبایل در صفحه خرید گوشی فروشگاه موبایل و درگاه امن پرداخت و پروتکل ssl راه‌هایی برای پی بردن به اصالت فروشگاه اینترنتی موبایل و قابل اعتماد بودنش برای خرید موبایل آنلاین است.
+              </p>
+              <h2 class="descriptions__title">
+                خرید اقساطی گوشی 
+              </h2>
+              <p class="descriptions__text">
+                خرید گوشی موبایل با توجه به بالا رفتن قیمت ارز سخت شده، با این حال بعضی از فروشگاه‌های اینترنتی موبایل و سایت‌های خرید گوشی، امکان خرید اقساطی گوشی موبایل و خرید اینترنتی موبایل را فراهم کرده‌اند. در خرید اقساطی گوشی موبایل، خرید اینترنتی گوشی از طریق افزایش اعتبار با چک یا سفته امکان پذیر است. خریداران قسطی موبایل می‌توانند با ارائه چک یا سفته، خرید موبایل را انجام دهند و سپس در اقساط ماهانه مشخص شده، مبلغ خرید گوشی را بازگردانند. معمولا خرید اقساطی گوشی موبایل شامل موبایل‌های پرفروش بازار مثل گوشی سامسونگ، گوشی شیائومی و گوشی هواوی می‌شود. نکته‌ی دیگری که در خرید اینترنتی موبایل باید به آن توجه کرد، قیمت منصفانه موبایل برای فروش است.
+              </p>
+              <h2 class="descriptions__title">
+                خرید گوشی سامسونگ
+              </h2>
+              <p class="descriptions__text">
+                گوشی‌های هوشمند سامسونگ، پرطرفدارترین برند موبایل در ایران هستند. برای
+              </p>
+              <h2 class="descriptions__title">
+                خرید گوشی شیائومی
+              </h2>
+              <p class="descriptions__text">
+                شیائومی کمپانی تولیدکننده گوشی و تبلت چینی است که بسیار هم پرطرفدار است.
+              </p>
+              <h2 class="descriptions__title">
+                خرید گوشی هواوی
+              </h2>
+              <p class="descriptions__text">
+               شرکت هواوی، شرکت چند ملیتی است که تولیدکننده گوشی موبایل هواوی و محصولات دیجیتال هواوی است.برای خرید       
+              </p>
+              <h2 class="descriptions__title">
+                خرید گوشی اپل
+              </h2>
+              <p class="descriptions__text">
+               شرکت اپل توسط استیو جابز و استیو وزنیاک تاسیس شده و محصولات الکترونیکی مثل لپ تاپ، کامپیوتر و گوشی تولید می‌کند. گوشی اپل که به گوشی آیفون معروف هستند، معروف‌ترین محصولات شرکت اپل به حساب می‌آیند. در حال حاضر قیمت گوشی اپل یا گوشی آیفون نسبت به سایر گوشی‌های سامسونگ، هواوی و شیائومی بالاتر است. جدیدترین گوشی آیفون، گوشی آیفون 13 پرومکس است و گوشی آیفون SE، آیفون 11 پرو و آیفون 11 پرومکس هم از دیگر گوشی‌ های آیفون جدید هستند که تا قبل از آیفون 13 به بازار آمدند. گوشی آیفون با وجود گران بودنش همیشه جزو گوشی های پرطرفدار در ایران است و سهم زیادی از خرید گوشی هوشمند را به خود اختصاص داده. گوشی های اپل معمولا در 4 ظرفیت 32، 64، 128 و 256 گیگابایتی تولید می‌شوند و کیفیت دوربین متفاوتی دارند.
+              </p>
+              <h2 class="descriptions__title">
+                خرید ارزانترین گوشی های 5G
+              </h2>
+              <p class="descriptions__text">
+               با پیشرفت تکنولوژی سرعت اینترنت در جهان، گوشی های g عرضه شدند. گوشی ها5G  سرعت بیشتری نسبت به گوشی های 4g دارند. از بهترین گوشی های5G  در بازار ایران که جزو ارزانترین گوشی های 5G  هم هستند می‌توان به گوشی شیائومی 11 لایت 5g ne، گوشی سامسونگ گلکسی a34، گوشی سامسونگ گلکسی a54 دو سیم کارت، گوشی موبایل موتورولا دو سیم کارت moto g 5g، گوشی سامسونگ گلکسی m33، گوشی شیائومی ردمی نوت10 5g  و گوشی پوکو X5 اشاره کرد. بیشتر گوشی های 5g  تولیدی شرکت سامسونگ هستند و بعد از آن گوشی های شیائومی اقدام به فروش ارزانترین گوشی های 5g می‌کنند. در تکنولایف می‌توانید تمامی گوشی های5g  را با بهترین و ارزان ترین قیمت
+              </p>
+              <h2 class="descriptions__title">
+                فروشگاه موبایل، لوازم جانبی و کالای دیجیتال تکنولایف
+              </h2>
+              <p class="descriptions__text">
+                در تکنولایف می‌توانید در کنار خرید گوشی هوشمند و اطلاع از قیمت انواع گوشی های سامسونگ، گوشی آیفون، گوشی شیائومی، گوشی هواوی و گوشی موتورولا،
+              </p>
+              <div class="cover cover--white"></div>
+            </div>
+            <div class="more-descriptions__btn">
+              <span class="more-descriptions__text"> نمایش بیشتر </span>
+              <svg class="more-descriptions__icon" style="width: .6rem ; height : .6rem" fill="none" viewBox="0 0 24 24" stroke-width="3px" stroke="#2962ff">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <site-footer></site-footer>
+</body>
+</html>

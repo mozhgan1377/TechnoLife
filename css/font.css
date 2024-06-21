@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "vazir" ;
+    font-weight: 600;
+    src: url('../fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Bold-FD-WOL.woff2') , format('woff2');
+} 
+
+
+@font-face {
+    font-family: "vazir" ;
+    font-weight: 400;
+    src: url('../fonts/vazir/Farsi-Digits-Without-Latin/Vazir-FD-WOL.woff2') , format('woff2');
+} 
+
+
+@font-face {
+    font-family: "vazir" ;
+    font-weight: 500;
+    src: url('../fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff2') , format('woff2');
+} 
+
+
+@font-face {
+    font-family: "vazir" ;
+    font-weight: 300;
+    src: url('../fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Light-FD-WOL.woff2') , format('woff2');
+} 
+
+
+@font-face {
+    font-family: "vazir" ;
+    font-weight: 200;
+    src: url('../fonts/vazir/Vazir-Thin.woff2') , format('woff2');
+} 
+
+
+
