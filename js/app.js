@@ -210,13 +210,7 @@ allProducts.forEach( product => {
         </div>
       </div>
      `
-    //  let x = document.querySelector(".sale-products").querySelector(".product__countdown") ;
-    //  x.insertAdjacentHTML("beforeend" , 10)
      ProductsElem.insertAdjacentHTML("beforeend" , newProduct)
-    
-
-  
-     
     }
 })
 
