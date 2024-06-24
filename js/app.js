@@ -183,7 +183,7 @@ allProducts.forEach( product => {
             <div class="product__line"></div>
           </header>
           <main class="product__main">
-            <a class="product__link" href="../product.html?id=`+ product.id +`" target="_blank">
+            <a class="product__link" href="../TechnoLife/product.html?id=`+ product.id +`" target="_blank">
               <img class="product__img" src=`+ product.src +` alt="">
             </a>
           </main>
@@ -284,7 +284,7 @@ function flagProduct__generator(){
             <div class="product__line" style="visibility: hidden;"></div>
           </header>
           <main class="product__main">
-            <a class="product__link" href="../product.html?id=`+ product.id +`" target="_blank">
+            <a class="product__link" href="../TechnoLife/product.html?id=`+ product.id +`" target="_blank">
               <img class="product__img" src=`+ product.src +` alt="">
             </a>
           </main>
@@ -344,7 +344,7 @@ function laptopProduct__generator(){
             <div class="product__line" style="visibility: hidden;"></div>
           </header>
           <main class="product__main">
-            <a class="product__link" href="../product.html?id=`+ product.id +`" target="_blank">
+            <a class="product__link" href="../TechnoLife/product.html?id=`+ product.id +`" target="_blank">
               <img class="product__img" src=`+ product.src +` alt="">
             </a>
           </main>
@@ -403,7 +403,7 @@ function furnitureProduct__generator(){
               <div class="product__line"></div>
             </header>
             <main class="product__main">
-              <a class="product__link" href="../product.html?id=`+ product.id +`" target="_blank">
+              <a class="product__link" href="../TechnoLife/product.html?id=`+ product.id +`" target="_blank">
                 <img class="product__img" src=`+ product.src +` alt="">
               </a>
             </main>
@@ -461,7 +461,7 @@ function accessoryProduct__generator(){
                 <div class="product__line"></div>
               </header>
               <main class="product__main">
-                <a class="product__link" href="../product.html?id=`+ product.id +`" target="_blank">
+                <a class="product__link" href="../TechnoLife/product.html?id=`+ product.id +`" target="_blank">
                   <img class="product__img" src=`+ product.src +` alt="">
                 </a>
               </main>
@@ -519,7 +519,7 @@ function tabletProduct__generator(){
               <div class="product__line"></div>
             </header>
             <main class="product__main">
-              <a class="product__link" href="../product.html?id=`+ product.id +`" target="_blank">
+              <a class="product__link" href="../TechnoLife/product.html?id=`+ product.id +`" target="_blank">
                 <img class="product__img" src=`+ product.src +` alt="">
               </a>
             </main>
